@@ -11,9 +11,13 @@ fn main() {
 
     let args: Vec<String> = std::env::args().collect();
 
+    // checks if environement variable ICAL_CALENDAR_URL is set or not. If yes, use it else expect url
+    // passed from the command line.
+    let ical_url = std::env::var("ICAL_CALENDAR_URL").unwrap_or_else(|_| args[1].clone());
+
     loop {
         let mut is_notified = HashSet::<String>::new();
-        if let Err(e) = step(&args[1], &mut is_notified) {
+        if let Err(e) = step(&ical_url, &mut is_notified) {
             tracing::warn!("Failed step: {e}");
         }
         std::thread::sleep(std::time::Duration::from_secs(60));
