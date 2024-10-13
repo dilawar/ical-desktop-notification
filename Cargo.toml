@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-reqwest = { version = "0.12.8", features = [ "blocking" ] }
+anyhow = "1.0.89"
 tracing = "0.1.40"
 tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
-url = "2.5.2"
+web_ical = "0.1.2"
