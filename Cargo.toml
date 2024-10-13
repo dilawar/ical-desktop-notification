@@ -1,5 +1,5 @@
 [package]
-name = "calendar-desktop-notification"
+name = "ical-desktop-notification"
 version = "0.1.0"
 edition = "2021"
 
