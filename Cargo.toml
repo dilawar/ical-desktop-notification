@@ -9,7 +9,9 @@ license = "MIT"
 [dependencies]
 anyhow = "1.0.89"
 chrono = "0.4.38"
+clap = { version = "4.5.20", features = ["derive"] }
 notify-rust = "4.11.3"
 tracing = "0.1.40"
 tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+url = "2.5.2"
 web_ical = { git = "https://github.com/dilawar/web_ical" }
