@@ -1,4 +1,4 @@
-Given an ical url of a calendar, this application sends a desktop notificaiton
+Given the ical url of a calendar, this application sends a desktop notificaiton
 when an event is about to occur (in 3 minutes).
 
 You can either set the environment variable `ICAL_CALENDAR_URL` or pass it at
